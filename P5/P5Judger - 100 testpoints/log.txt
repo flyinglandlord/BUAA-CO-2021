@@ -1,0 +1,3 @@
+正在比较文件 src_v.out 和 STD_V.OUT
+FC: 找不到差异
+

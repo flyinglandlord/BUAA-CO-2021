@@ -1,0 +1,174 @@
+#**************************************************************
+# system clock and reset input
+#**************************************************************
+NET "clk_in"        LOC = AF13 | IOSTANDARD = LVCMOS33;
+
+NET "sys_rstn"      LOC = AC12 | IOSTANDARD = LVCMOS33;
+
+#**************************************************************
+# uart interface
+#**************************************************************
+NET "uart_rxd" LOC = AF21 | IOSTANDARD = LVCMOS33; 
+NET "uart_txd" LOC = AE21 | IOSTANDARD = LVCMOS33; 
+
+#**************************************************************
+# DIP switch
+#**************************************************************
+NET "dip_switch0[7]" LOC = D1  | IOSTANDARD = LVCMOS33;
+NET "dip_switch0[6]" LOC = E3  | IOSTANDARD = LVCMOS33;
+NET "dip_switch0[5]" LOC = E1  | IOSTANDARD = LVCMOS33;
+NET "dip_switch0[4]" LOC = F3  | IOSTANDARD = LVCMOS33;
+NET "dip_switch0[3]" LOC = F1  | IOSTANDARD = LVCMOS33;
+NET "dip_switch0[2]" LOC = G3  | IOSTANDARD = LVCMOS33;
+NET "dip_switch0[1]" LOC = H7  | IOSTANDARD = LVCMOS33;
+NET "dip_switch0[0]" LOC = H3  | IOSTANDARD = LVCMOS33;
+NET "dip_switch1[7]" LOC = G6  | IOSTANDARD = LVCMOS33;
+NET "dip_switch1[6]" LOC = E6  | IOSTANDARD = LVCMOS33;
+NET "dip_switch1[5]" LOC = G5  | IOSTANDARD = LVCMOS33;
+NET "dip_switch1[4]" LOC = E4  | IOSTANDARD = LVCMOS33;
+NET "dip_switch1[3]" LOC = B2  | IOSTANDARD = LVCMOS33;
+NET "dip_switch1[2]" LOC = C2  | IOSTANDARD = LVCMOS33;
+NET "dip_switch1[1]" LOC = B1  | IOSTANDARD = LVCMOS33;
+NET "dip_switch1[0]" LOC = C1  | IOSTANDARD = LVCMOS33;
+NET "dip_switch2[7]" LOC = A9  | IOSTANDARD = LVCMOS33;
+NET "dip_switch2[6]" LOC = C9  | IOSTANDARD = LVCMOS33;
+NET "dip_switch2[5]" LOC = G8  | IOSTANDARD = LVCMOS33;
+NET "dip_switch2[4]" LOC = C8  | IOSTANDARD = LVCMOS33;
+NET "dip_switch2[3]" LOC = D8  | IOSTANDARD = LVCMOS33;
+NET "dip_switch2[2]" LOC = C7  | IOSTANDARD = LVCMOS33;
+NET "dip_switch2[1]" LOC = D7  | IOSTANDARD = LVCMOS33;
+NET "dip_switch2[0]" LOC = B6  | IOSTANDARD = LVCMOS33;
+NET "dip_switch3[7]" LOC = A16 | IOSTANDARD = LVCMOS33;
+NET "dip_switch3[6]" LOC = C14 | IOSTANDARD = LVCMOS33;
+NET "dip_switch3[5]" LOC = A14 | IOSTANDARD = LVCMOS33;
+NET "dip_switch3[4]" LOC = E14 | IOSTANDARD = LVCMOS33;
+NET "dip_switch3[3]" LOC = F13 | IOSTANDARD = LVCMOS33;
+NET "dip_switch3[2]" LOC = C13 | IOSTANDARD = LVCMOS33;
+NET "dip_switch3[1]" LOC = D12 | IOSTANDARD = LVCMOS33;
+NET "dip_switch3[0]" LOC = C11 | IOSTANDARD = LVCMOS33;
+NET "dip_switch4[7]" LOC = C3  | IOSTANDARD = LVCMOS33;
+NET "dip_switch4[6]" LOC = H8  | IOSTANDARD = LVCMOS33;
+NET "dip_switch4[5]" LOC = F5  | IOSTANDARD = LVCMOS33;
+NET "dip_switch4[4]" LOC = H6  | IOSTANDARD = LVCMOS33;
+NET "dip_switch4[3]" LOC = E2  | IOSTANDARD = LVCMOS33;
+NET "dip_switch4[2]" LOC = G4  | IOSTANDARD = LVCMOS33;
+NET "dip_switch4[1]" LOC = G2  | IOSTANDARD = LVCMOS33;
+NET "dip_switch4[0]" LOC = G1  | IOSTANDARD = LVCMOS33;
+NET "dip_switch5[7]" LOC = D6  | IOSTANDARD = LVCMOS33;
+NET "dip_switch5[6]" LOC = C5  | IOSTANDARD = LVCMOS33;
+NET "dip_switch5[5]" LOC = D5  | IOSTANDARD = LVCMOS33;
+NET "dip_switch5[4]" LOC = C4  | IOSTANDARD = LVCMOS33;
+NET "dip_switch5[3]" LOC = A4  | IOSTANDARD = LVCMOS33;
+NET "dip_switch5[2]" LOC = B4  | IOSTANDARD = LVCMOS33;
+NET "dip_switch5[1]" LOC = A2  | IOSTANDARD = LVCMOS33;
+NET "dip_switch5[0]" LOC = E5  | IOSTANDARD = LVCMOS33;
+NET "dip_switch6[7]" LOC = J10 | IOSTANDARD = LVCMOS33;
+NET "dip_switch6[6]" LOC = G7  | IOSTANDARD = LVCMOS33;
+NET "dip_switch6[5]" LOC = C6  | IOSTANDARD = LVCMOS33;
+NET "dip_switch6[4]" LOC = A8  | IOSTANDARD = LVCMOS33;
+NET "dip_switch6[3]" LOC = B8  | IOSTANDARD = LVCMOS33;
+NET "dip_switch6[2]" LOC = A7  | IOSTANDARD = LVCMOS33;
+NET "dip_switch6[1]" LOC = A5  | IOSTANDARD = LVCMOS33;
+NET "dip_switch6[0]" LOC = A6  | IOSTANDARD = LVCMOS33;
+NET "dip_switch7[7]" LOC = A13 | IOSTANDARD = LVCMOS33;
+NET "dip_switch7[6]" LOC = A12 | IOSTANDARD = LVCMOS33;
+NET "dip_switch7[5]" LOC = C12 | IOSTANDARD = LVCMOS33;
+NET "dip_switch7[4]" LOC = F11 | IOSTANDARD = LVCMOS33;
+NET "dip_switch7[3]" LOC = C10 | IOSTANDARD = LVCMOS33;
+NET "dip_switch7[2]" LOC = F10 | IOSTANDARD = LVCMOS33;
+NET "dip_switch7[1]" LOC = B10 | IOSTANDARD = LVCMOS33;
+NET "dip_switch7[0]" LOC = F9  | IOSTANDARD = LVCMOS33;
+
+#**************************************************************
+# user keys
+#**************************************************************
+NET "user_key[0]" LOC = K5 | IOSTANDARD = LVCMOS33;
+NET "user_key[1]" LOC = K8 | IOSTANDARD = LVCMOS33;
+NET "user_key[2]" LOC = L1 | IOSTANDARD = LVCMOS33;
+NET "user_key[3]" LOC = L2 | IOSTANDARD = LVCMOS33;
+NET "user_key[4]" LOC = K1 | IOSTANDARD = LVCMOS33;
+NET "user_key[5]" LOC = J1 | IOSTANDARD = LVCMOS33;
+NET "user_key[6]" LOC = J7 | IOSTANDARD = LVCMOS33;
+NET "user_key[7]" LOC = D3 | IOSTANDARD = LVCMOS33;
+
+#**************************************************************
+# LED lights
+#**************************************************************
+NET "led_light[0]"   LOC = L9  | IOSTANDARD = LVCMOS33;
+NET "led_light[1]"   LOC = K9  | IOSTANDARD = LVCMOS33;
+NET "led_light[2]"   LOC = N1  | IOSTANDARD = LVCMOS33;
+NET "led_light[3]"   LOC = N2  | IOSTANDARD = LVCMOS33;
+NET "led_light[4]"   LOC = M1  | IOSTANDARD = LVCMOS33;
+NET "led_light[5]"   LOC = M3  | IOSTANDARD = LVCMOS33;
+NET "led_light[6]"   LOC = L8  | IOSTANDARD = LVCMOS33;
+NET "led_light[7]"   LOC = K7  | IOSTANDARD = LVCMOS33;
+NET "led_light[8]"   LOC = K6  | IOSTANDARD = LVCMOS33;
+NET "led_light[9]"   LOC = K3  | IOSTANDARD = LVCMOS33;
+NET "led_light[10]"  LOC = J4  | IOSTANDARD = LVCMOS33;
+NET "led_light[11]"  LOC = J3  | IOSTANDARD = LVCMOS33;
+NET "led_light[12]"  LOC = J5  | IOSTANDARD = LVCMOS33;
+NET "led_light[13]"  LOC = J2  | IOSTANDARD = LVCMOS33;
+NET "led_light[14]"  LOC = H5  | IOSTANDARD = LVCMOS33;
+NET "led_light[15]"  LOC = H1  | IOSTANDARD = LVCMOS33;
+NET "led_light[16]"  LOC = E9  | IOSTANDARD = LVCMOS33;
+NET "led_light[17]"  LOC = D10 | IOSTANDARD = LVCMOS33;
+NET "led_light[18]"  LOC = A11 | IOSTANDARD = LVCMOS33;
+NET "led_light[19]"  LOC = A10 | IOSTANDARD = LVCMOS33;
+NET "led_light[20]"  LOC = D11 | IOSTANDARD = LVCMOS33;
+NET "led_light[21]"  LOC = E10 | IOSTANDARD = LVCMOS33;
+NET "led_light[22]"  LOC = D14 | IOSTANDARD = LVCMOS33;
+NET "led_light[23]"  LOC = A15 | IOSTANDARD = LVCMOS33;
+NET "led_light[24]"  LOC = G16 | IOSTANDARD = LVCMOS33;
+NET "led_light[25]"  LOC = B14 | IOSTANDARD = LVCMOS33;
+NET "led_light[26]"  LOC = F15 | IOSTANDARD = LVCMOS33;
+NET "led_light[27]"  LOC = D15 | IOSTANDARD = LVCMOS33;
+NET "led_light[28]"  LOC = B16 | IOSTANDARD = LVCMOS33;
+NET "led_light[29]"  LOC = D16 | IOSTANDARD = LVCMOS33;
+NET "led_light[30]"  LOC = C16 | IOSTANDARD = LVCMOS33;
+NET "led_light[31]"  LOC = B18 | IOSTANDARD = LVCMOS33;
+
+#**************************************************************
+# Digital Tube
+#**************************************************************
+NET "digital_tube2[7]"   LOC = D19 | IOSTANDARD = LVCMOS33;        
+NET "digital_tube2[6]"   LOC = B20 | IOSTANDARD = LVCMOS33;        
+NET "digital_tube2[5]"   LOC = D21 | IOSTANDARD = LVCMOS33;
+NET "digital_tube2[4]"   LOC = D20 | IOSTANDARD = LVCMOS33;     
+NET "digital_tube2[3]"   LOC = H15 | IOSTANDARD = LVCMOS33;     
+NET "digital_tube2[2]"   LOC = B22 | IOSTANDARD = LVCMOS33;     
+NET "digital_tube2[1]"   LOC = A21 | IOSTANDARD = LVCMOS33;
+NET "digital_tube2[0]"   LOC = A22 | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel2"  LOC = J17 | IOSTANDARD = LVCMOS33;
+      
+NET "digital_tube1[7]"      LOC = A20  | IOSTANDARD = LVCMOS33;        
+NET "digital_tube1[6]"      LOC = E19  | IOSTANDARD = LVCMOS33;        
+NET "digital_tube1[5]"      LOC = E20  | IOSTANDARD = LVCMOS33;
+NET "digital_tube1[4]"      LOC = A19  | IOSTANDARD = LVCMOS33;     
+NET "digital_tube1[3]"      LOC = F17  | IOSTANDARD = LVCMOS33;     
+NET "digital_tube1[2]"      LOC = E18  | IOSTANDARD = LVCMOS33;     
+NET "digital_tube1[1]"      LOC = C21  | IOSTANDARD = LVCMOS33;
+NET "digital_tube1[0]"      LOC = C17  | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel1[0]"  LOC = G17  | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel1[1]"  LOC = C19  | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel1[2]"  LOC = F18  | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel1[3]"  LOC = C20  | IOSTANDARD = LVCMOS33;
+
+NET "digital_tube0[7]"      LOC = E17  | IOSTANDARD = LVCMOS33;        
+NET "digital_tube0[6]"      LOC = J14  | IOSTANDARD = LVCMOS33;        
+NET "digital_tube0[5]"      LOC = B12  | IOSTANDARD = LVCMOS33;
+NET "digital_tube0[4]"      LOC = F16  | IOSTANDARD = LVCMOS33;     
+NET "digital_tube0[3]"      LOC = C18  | IOSTANDARD = LVCMOS33;     
+NET "digital_tube0[2]"      LOC = D18  | IOSTANDARD = LVCMOS33;     
+NET "digital_tube0[1]"      LOC = D13  | IOSTANDARD = LVCMOS33;
+NET "digital_tube0[0]"      LOC = A18  | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel0[0]"  LOC = E16  | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel0[1]"  LOC = A17  | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel0[2]"  LOC = C15  | IOSTANDARD = LVCMOS33;
+NET "digital_tube_sel0[3]"  LOC = G14  | IOSTANDARD = LVCMOS33;
+
+#**************************************************************
+# clock timing
+#**************************************************************
+NET "clk_in" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clk_in" TNM_NET = "clk_in";
+TIMESPEC TS_clk_in = PERIOD "clk_in" 40 ns;
